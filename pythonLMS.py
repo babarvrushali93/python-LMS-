@@ -71,7 +71,7 @@ class LMS:
         books_id = input("Enter book ID:") 
         if books_id in self.books_dict.keys():
             if self.books_dict[books_id]["Status"] == "Available":
-                print("This book is already available in library. Please check your bokk ID.")
+                print("This book is already available in library. Please check your book ID.")
                 return self.return_books()
             elif not self.books_dict[books_id]["Status"] == "Available":
                 self.books_dict[books_id]["lender_name"] = ""
